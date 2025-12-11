@@ -116,7 +116,7 @@ const SellFlow = () => {
         // Check if we are in "configured" mode. If so, block.
         // If not, maybe allow as demo?
         // "Crucial: Use the authenticated user's ID... for seller_id" -> Logic must try to get it.
-        if (process.env.NEXT_PUBLIC_SUPABASE_URL && !process.env.NEXT_PUBLIC_SUPABASE_URL.includes('placeholder')) {
+        if (import.meta.env.VITE_SUPABASE_URL && !import.meta.env.VITE_SUPABASE_URL.includes('placeholder')) {
           alert("Please log in to post.");
           // navigate('/'); 
           // return; // Uncomment to force enforcement

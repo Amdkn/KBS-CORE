@@ -17,7 +17,7 @@ const Messages = () => {
         setCurrentUser(user.id);
       } else {
         // For demo stability, if no user, we might mock a user ID or redirect
-        if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes('placeholder')) {
+        if (import.meta.env.VITE_SUPABASE_URL?.includes('placeholder')) {
           setCurrentUser('current-user');
         } else {
           // navigate('/');
@@ -65,7 +65,7 @@ const Messages = () => {
       // Real Fetch Logic
       // Note: In a real Supabase setup, we would join app_user to get details.
       // Since this is 2B iteration, we'll try to fetch, but fallback to mock if env keys aren't set.
-      if (userId === 'current-user' && process.env.NEXT_PUBLIC_SUPABASE_URL?.includes('placeholder')) {
+      if (userId === 'current-user' && import.meta.env.VITE_SUPABASE_URL?.includes('placeholder')) {
         throw new Error("Demo Mode");
       }
 
