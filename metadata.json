@@ -1,0 +1,9 @@
+{
+  "name": "KBS Marketplace",
+  "description": "A Solarpunk C2C marketplace for the Ohio/Kentucky area focused on circular economy.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
