@@ -19,7 +19,7 @@ const Profile = () => {
       // If we are in real mode and no user, redirect (or for demo, fallback to mock)
       if (!authUser) {
         // If robust env, redirect
-        if (process.env.NEXT_PUBLIC_SUPABASE_URL && !process.env.NEXT_PUBLIC_SUPABASE_URL.includes('placeholder')) {
+        if (import.meta.env.VITE_SUPABASE_URL && !import.meta.env.VITE_SUPABASE_URL.includes('placeholder')) {
           // navigate('/'); // Commented out for smoother demo flow if not logged in
           // For now, load mock user if not logged in so page isn't broken
           const mockUser: AppUser = {
