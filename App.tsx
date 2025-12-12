@@ -1,16 +1,16 @@
 import React from 'react';
 import { HashRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
-import HomeFeed from './pages/HomeFeed';
-import ItemDetail from './pages/ItemDetail';
-import SellFlow from './pages/SellFlow';
-import Saved from './pages/Saved';
-import Messages from './pages/Messages';
-import ChatDetail from './pages/ChatDetail';
-import Profile from './pages/Profile';
-import EditProfile from './pages/EditProfile';
-import Settings from './pages/Settings';
-import Support from './pages/Support';
-import Auth from './pages/Auth';
+import HomeFeed from './src_pages/HomeFeed';
+import ItemDetail from './src_pages/ItemDetail';
+import SellFlow from './src_pages/SellFlow';
+import Saved from './src_pages/Saved';
+import Messages from './src_pages/Messages';
+import ChatDetail from './src_pages/ChatDetail';
+import Profile from './src_pages/Profile';
+import EditProfile from './src_pages/EditProfile';
+import Settings from './src_pages/Settings';
+import Support from './src_pages/Support';
+import Auth from './src_pages/Auth';
 import BottomNav from './components/BottomNav';
 
 const Layout = ({ children }: { children?: React.ReactNode }) => {
